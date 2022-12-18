@@ -32,9 +32,11 @@ if (isset($_POST['username'])){
             // Redirect user to index.php
 	    header("Location: landing_page.php");
          }else{
-	echo "<div class='form'>
-<h3>Username/password is incorrect.</h3>
-<br/>Click here to <a href='login.php'>Login</a></div>";
+	echo "
+    <div class='container'
+    <div class='form'>
+<h3>Username or password is incorrect.</h3>
+<br/>Click here to <a href='login.php'>Login</a></div></div>";
 	}
     }else{
 ?>
